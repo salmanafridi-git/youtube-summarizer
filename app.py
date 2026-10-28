@@ -93,7 +93,7 @@ with st.sidebar:
     api_key = get_api_key() or st.text_input(
         "Google AI Studio API key", type="password", help="Get one at aistudio.google.com"
     )
-    model = st.text_input("Gemini model", value="gemini-2.5-flash")
+    model = st.text_input("Gemini model", value="gemini-3.5-flash")
     mode = st.selectbox(
         "Output type",
         ["Short summary", "Key points", "Timestamps / chapters", "Study notes + quiz"],
